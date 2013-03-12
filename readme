@@ -1,0 +1,4 @@
+This file is just some helpful learning items for vim
+
+:scriptnames - to list all the bundles installed
+:so $MYVIMRC - to source my _vimrc

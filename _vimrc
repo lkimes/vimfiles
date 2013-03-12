@@ -9,15 +9,33 @@ endif
 color Pablo
 
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+filetype plugin on
+set tabstop=4
+nnoremap <space> :nohls<CR>
+inoremap jk <esc>
+nnoremap j gj
+nnoremap k gk
+set incsearch
+"keep 4 lines above the cursor when scrolling at the top of the screen
+set so=4
+set backspace=indent,eol,start whichwrap+=<,>,[,]
 
 au FileType python setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 set guioptions-=T  "remove toolbar
+
+"Commenting section to support comments
+"Menu items for Commenting and Un-Commenting code
+
+" End commenting section
 
 " Turn on line numbers:
 set number
 
 " Toggle line numbers and fold column for easy copying:
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
+
+set hlsearch
+set expandtab
 
 " Autoindent for Python
 "filetype plugin indent on
