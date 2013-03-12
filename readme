@@ -13,3 +13,7 @@ git status
 From remote to make sure you have sync'd your submodules:
 git submodule init (I think first time something gets added)
 git submodule update
+
+
+Someday Modules
+I like the idea of vipy but I'm not sure I really need it at this point or care to add it to my plate is probably more like it.  On windows I had issues with pyzmq which is likely due to me not following the installation instructions sufficiently.  
