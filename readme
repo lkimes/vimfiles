@@ -2,3 +2,14 @@ This file is just some helpful learning items for vim
 
 :scriptnames - to list all the bundles installed
 :so $MYVIMRC - to source my _vimrc
+
+To get submodules to work they must be added as submodule
+If the directory already exists then remove it from git (git rm /bundle/<dir>)
+git submodule add <git repo> bundle/<normally name like syntastic>
+
+To verify that it is ok then
+git status
+
+From remote to make sure you have sync'd your submodules:
+git submodule init (I think first time something gets added)
+git submodule update
