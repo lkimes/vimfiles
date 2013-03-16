@@ -7,6 +7,7 @@ if has('win32') || has('win64')
  filetype plugin indent on
 endif
 color Pablo
+let TList_Ctags_Cmd="$HOME/bin/ctags.exe"
 
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 filetype plugin on
@@ -16,6 +17,7 @@ inoremap jk <esc>
 nnoremap j gj
 nnoremap k gk
 set incsearch
+nnoremap <mapleader>a :'<,'>Align = std_logic_vector std_logic;
 "keep 4 lines above the cursor when scrolling at the top of the screen
 set so=4
 set backspace=indent,eol,start whichwrap+=<,>,[,]
