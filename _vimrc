@@ -1,5 +1,7 @@
 set nocompatible               " be iMproved
 
+win 100 65
+winpos 13 23
 if has('win32') || has('win64')
   set nocp
  call pathogen#infect()
